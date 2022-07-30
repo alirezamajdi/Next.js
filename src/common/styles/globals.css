@@ -1,0 +1,20 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import './components/button.css';
+@import './nprogress.css';
+
+html {
+    font-size: 62.5% !important;
+}
+
+body {
+    line-height: 1.5;
+    font-size: 1.4rem;
+}
+
+@layer components {
+    .form-field {
+        @apply w-full p-3 rounded-[5px] outline-none border-solid border my-2
+    }
+}

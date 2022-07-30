@@ -1,0 +1,48 @@
+.btn {
+   border: 1rem;
+   padding: 0.8rem 1.6rem;
+   border-radius: 1.2rem;
+   cursor: pointer;
+   text-transform: capitalize;
+   margin-top: 0.5rem;
+   margin-bottom: 0.5rem;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   transition: all 0.3s ease;
+   font-size: 1.5rem;
+}
+
+.btn svg {
+   transition: all 0.3s ease;
+}
+
+.btn.primary {
+   background-color: #006FFD;
+   color: #fff;
+}
+
+.btn.primary svg {
+   fill: #fff;
+}
+
+.btn.primary:hover {
+   background-color: #EAF2FF;
+   color: #006FFD;
+}
+
+.btn.primary:hover svg {
+   fill: #006FFD;
+}
+
+.btn.outline {
+   background-color: #EAF2FF;
+   border-color:  #006FFD;
+   color: #006FFD;
+}
+.btn.large {
+   padding: 1.2rem 2rem;
+}
+.btn.largest{
+   width: 100%;
+}
