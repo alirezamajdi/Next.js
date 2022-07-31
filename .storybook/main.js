@@ -18,4 +18,8 @@ module.exports = {
   core: {
     builder: '@storybook/builder-webpack5',
   },
+  webpackFinal: async (config) => {
+    config.resolve.modules.push(path.resolve(__dirname, '../src'))
+    return config
+  },
 }
