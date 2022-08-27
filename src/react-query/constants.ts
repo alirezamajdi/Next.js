@@ -3,4 +3,5 @@ export const queryKeys: Record<string, string> = {
   appointments: 'appointments',
   users: 'users',
   staff: 'staff',
+  posts: 'posts',
 }

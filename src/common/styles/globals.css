@@ -12,6 +12,9 @@ body {
     line-height: 1.5;
     font-size: 1.4rem;
 }
+input{
+    border: 1px solid #ddd;
+}
 
 @layer components {
     .form-field {

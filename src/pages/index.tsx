@@ -25,15 +25,6 @@ const Home: React.FC = () => {
       <Head>
         <title>Apllone</title>
       </Head>
-      <Nav />
-      <div className='grid grid-cols-2'></div>
-
-      <div className='pt-5'>
-        <button onClick={changeTheme}>setTheme</button>
-        <p>theme is {themeCtx?.theme} mode</p>
-      </div>
-      <input className='border' onChange={(e) => setValue(e.target.value)} />
-      <Button label='button' icon='listing' />
     </div>
   )
 }

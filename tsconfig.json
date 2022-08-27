@@ -16,6 +16,6 @@
     "incremental": true,
     "baseUrl": "src"
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "craco.config.js"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "craco.config.js", "src/modules/landing/components/__tests__/hidden-message.js", "src/modules/landing/components/Greetings.test.jsx"],
   "exclude": ["node_modules"]
 }

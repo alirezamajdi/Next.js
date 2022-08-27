@@ -11,6 +11,8 @@ import { Loading } from 'common/components/UI/Loading'
 import '../common/styles/globals.css'
 import Head from 'next/head'
 
+require('../common/mocks')
+
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter()
   useEffect(() => {
