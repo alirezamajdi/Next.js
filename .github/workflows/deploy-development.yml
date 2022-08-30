@@ -30,10 +30,10 @@ jobs:
       - name: Build my App
         run: npm run build
         env:
-          NEXT_PUBLIC_BASE_PATH: /apollon
+          NEXT_PUBLIC_BASE_PATH: /Next.js
       - run: npm run export
         env:
-          NEXT_PUBLIC_BASE_PATH: /apollon
+          NEXT_PUBLIC_BASE_PATH: /Next.js
       - run: touch ./out/.nojekyll
 
       - name: Deploy 🚀
