@@ -1,17 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useState, useEffect, useCallback } from 'react'
 import Head from 'next/head'
-import Nav from 'common/components/layout/Nav'
-import { useThemeContext } from 'common/context/theme-context'
 import { throttle } from 'lodash'
-import Button from 'common/components/UI/button/Button'
 
-const Home: React.FC = () => {
-  //context
-  const themeCtx = useThemeContext()
-  const changeTheme = () => {
-    themeCtx?.toggleTheme()
-  }
+const Home = () => {
   //throttled
   const [value, setValue] = useState('')
   const throttled = useCallback(
@@ -21,10 +13,11 @@ const Home: React.FC = () => {
   useEffect(() => throttled(value), [value])
 
   return (
-    <div className={'container'}>
+    <div className='container'>
       <Head>
-        <title>Apllone</title>
+        <title>Nextjs</title>
       </Head>
+      <h2>Hello Next js</h2>
     </div>
   )
 }

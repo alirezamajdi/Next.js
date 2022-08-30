@@ -2,7 +2,6 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
-import Nav from 'common/components/layout/Nav'
 import * as api from 'modules/users/queries/users'
 
 const Index = ({ data }: any) => {
