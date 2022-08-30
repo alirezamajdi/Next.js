@@ -1,7 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
 import React, { useState, useEffect, useCallback } from 'react'
 import Head from 'next/head'
-import Nav from 'common/components/nav/Nav'
+import Nav from 'common/components/layout/Nav'
 import { useThemeContext } from 'common/context/theme-context'
 import { throttle } from 'lodash'
 import Button from 'common/components/UI/button/Button'

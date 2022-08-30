@@ -10,8 +10,9 @@ import ContextProvider from 'common/context/index'
 import { Loading } from 'common/components/UI/Loading'
 import '../common/styles/globals.css'
 import Head from 'next/head'
+import Header from 'common/components/layout/Header'
 
-require('../common/mocks')
+// require('../common/mocks')
 
 function MyApp({ Component, pageProps }: AppProps) {
   const router = useRouter()
@@ -52,6 +53,7 @@ function MyApp({ Component, pageProps }: AppProps) {
           <Hydrate state={pageProps.dehydratedState}>
             <ContextProvider>
               <Loading />
+              <Header />
               <Component {...pageProps} />
             </ContextProvider>
             <ReactQueryDevtools initialIsOpen={false} />

@@ -2,25 +2,22 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
-import Nav from 'common/components/nav/Nav'
+import Nav from 'common/components/layout/Nav'
 import * as api from 'modules/users/queries/users'
 
-const Index: React.FC = ({ data }: any) => {
-
+const Index = ({ data }: any) => {
   return (
     <div className={'container'}>
       <Head>
-        <title>Pokemon List</title>
+        <title>User List</title>
       </Head>
-      <Nav />
-      {data.map((user: any) => (
-        <div className='flex items-center p-2'>
-          <p>{user.name}</p>
-          <Link href={`/users/${user.id}`}>
-            <a className='p-2 border ml-3'>view</a>
-          </Link>
-        </div>
-      ))}
+      <ul>
+        {data?.map((user: User) => (
+          <li key={user.id} className=' cursor-pointer py-2'>
+            <Link href={'/usersWithSSG/' + user.id}>{user.username}</Link>
+          </li>
+        ))}
+      </ul>
     </div>
   )
 }
